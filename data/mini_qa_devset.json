@@ -1,0 +1,146 @@
+[
+  {
+    "relation_keyword": "visit",
+    "quadruple": {
+      "s": "Xi Jinping",
+      "p": "Make a visit",
+      "o": "South Korea",
+      "t": "2014-06-29"
+    },
+    "question_explicit": "Which country did Xi Jinping visit on 2014-06-29?",
+    "question_implicit": "Following Xi Jinping's visit, which country did he visit?",
+    "answer": "South Korea"
+  },
+  {
+    "relation_keyword": "appeal",
+    "quadruple": {
+      "s": "Businessperson (United Kingdom)",
+      "p": "Appeal for release of persons or property",
+      "o": "Member of the Judiciary (United Kingdom)",
+      "t": "2014-05-22"
+    },
+    "question_explicit": "Who appealed for release of persons or property to a Member of the Judiciary in the United Kingdom on 2014-05-22?",
+    "question_implicit": "At the time when an appeal for release was made to Member of the Judiciary (United Kingdom), who made it?",
+    "answer": "Businessperson (United Kingdom)"
+  },
+  {
+    "relation_keyword": "threaten",
+    "quadruple": {
+      "s": "Terrorist (Islamic State of Iraq and the Levant)",
+      "p": "Threaten",
+      "o": "Iraq",
+      "t": "2014-10-14"
+    },
+    "question_explicit": "Who threatened Iraq on 2014-10-14?",
+    "question_implicit": "When Iraq was threatened, who made the threat?",
+    "answer": "Terrorist (Islamic State of Iraq and the Levant)"
+  },
+  {
+    "relation_keyword": "reject",
+    "quadruple": {
+      "s": "Court Judge (Kenya)",
+      "p": "Reject",
+      "o": "Citizen (Kenya)",
+      "t": "2014-11-18"
+    },
+    "question_explicit": "Who rejected a Citizen of Kenya on 2014-11-18?",
+    "question_implicit": "After Citizen (Kenya) was rejected, who rejected them?",
+    "answer": "Court Judge (Kenya)"
+  },
+  {
+    "relation_keyword": "reject",
+    "quadruple": {
+      "s": "Political Parties (Egypt)",
+      "p": "Reject",
+      "o": "Sami Hafez Anan",
+      "t": "2014-12-03"
+    },
+    "question_explicit": "Who rejected Sami Hafez Anan on 2014-12-03?",
+    "question_implicit": "At the time when Sami Hafez Anan was rejected in Egypt, who rejected him?",
+    "answer": "Political Parties (Egypt)"
+  },
+  {
+    "relation_keyword": "meet",
+    "quadruple": {
+      "s": "Catherine Ashton",
+      "p": "Express intent to meet or negotiate",
+      "o": "Mohammad Javad Zarif",
+      "t": "2014-10-14"
+    },
+    "question_explicit": "Who expressed intent to meet or negotiate with Mohammad Javad Zarif on 2014-10-14?",
+    "question_implicit": "Once intent to negotiate with Mohammad Javad Zarif was expressed, who expressed it?",
+    "answer": "Catherine Ashton"
+  },
+  {
+    "relation_keyword": "appeal",
+    "quadruple": {
+      "s": "China",
+      "p": "Make an appeal or request",
+      "o": "Malaysia",
+      "t": "2014-04-01"
+    },
+    "question_explicit": "Which country made an appeal or request to Malaysia on 2014-04-01?",
+    "question_implicit": "At the time when Malaysia received an appeal, which country made it?",
+    "answer": "China"
+  },
+  {
+    "relation_keyword": "meet",
+    "quadruple": {
+      "s": "Benjamin Netanyahu",
+      "p": "Express intent to meet or negotiate",
+      "o": "Mexico",
+      "t": "2014-03-20"
+    },
+    "question_explicit": "What did Benjamin Netanyahu express toward Mexico on 2014-03-20?",
+    "question_implicit": "What did Benjamin Netanyahu express toward Mexico during his outreach to the country?",
+    "answer": "Intent to meet or negotiate"
+  },
+  {
+    "relation_keyword": "praise",
+    "quadruple": {
+      "s": "Bishop (Nigeria)",
+      "p": "Praise or endorse",
+      "o": "Rauf Aregbesola",
+      "t": "2014-07-10"
+    },
+    "question_explicit": "Who praised or endorsed Rauf Aregbesola on 2014-07-10?",
+    "question_implicit": "During the endorsement of Rauf Aregbesola in Nigeria, who praised him?",
+    "answer": "Bishop (Nigeria)"
+  },
+  {
+    "relation_keyword": "visit",
+    "quadruple": {
+      "s": "Iran",
+      "p": "Host a visit",
+      "o": "Majid Takht Ravanchi",
+      "t": "2014-01-10"
+    },
+    "question_explicit": "Which country hosted a visit by Majid Takht Ravanchi on 2014-01-10?",
+    "question_implicit": "While Majid Takht Ravanchi's visit occurred, which country hosted him?",
+    "answer": "Iran"
+  },
+  {
+    "relation_keyword": "meet",
+    "quadruple": {
+      "s": "South Korea",
+      "p": "Express intent to meet or negotiate",
+      "o": "North Korea",
+      "t": "2014-10-22"
+    },
+    "question_explicit": "Who expressed intent to meet or negotiate with North Korea on 2014-10-22?",
+    "question_implicit": "At the time when negotiations were proposed, who expressed intent to meet with North Korea?",
+    "answer": "South Korea"
+  },
+  {
+    "relation_keyword": "threaten",
+    "quadruple": {
+      "s": "John Kerry",
+      "p": "Threaten",
+      "o": "Afghanistan",
+      "t": "2014-07-11"
+    },
+    "question_explicit": "What did John Kerry do to Afghanistan on 2014-07-11?",
+    "question_implicit": "At the time when Afghanistan was threatened by John Kerry, what action did he take?",
+    "answer": "Threaten"
+  }
+]

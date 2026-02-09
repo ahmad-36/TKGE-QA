@@ -1,0 +1,605 @@
+[
+  {
+    "id": "simple_001",
+    "question": "What did Russia do on 2014-02-27?",
+    "category": "simple_entity",
+    "expected_entities_needed": [
+      "Russia",
+      "2014-02-27"
+    ],
+    "requires_implicit_expansion": false,
+    "why_diverse": "Captures a single-country military action at the start of the Crimea crisis"
+  },
+  {
+    "id": "simple_002",
+    "question": "What did the United States announce on 2014-03-06?",
+    "category": "simple_entity",
+    "expected_entities_needed": [
+      "United States",
+      "2014-03-06"
+    ],
+    "requires_implicit_expansion": false,
+    "why_diverse": "Tests recognition of policy announcements tied to sanctions"
+  },
+  {
+    "id": "simple_003",
+    "question": "Who did Barack Obama meet with in March 2014?",
+    "category": "simple_entity",
+    "expected_entities_needed": [
+      "Barack Obama",
+      "March 2014"
+    ],
+    "requires_implicit_expansion": false,
+    "why_diverse": "Focuses on a single leader\u2019s diplomatic meetings within a time window"
+  },
+  {
+    "id": "simple_004",
+    "question": "What action did Ukraine take on 2014-04-15?",
+    "category": "simple_entity",
+    "expected_entities_needed": [
+      "Ukraine",
+      "2014-04-15"
+    ],
+    "requires_implicit_expansion": false,
+    "why_diverse": "Captures internal security actions during early eastern Ukraine conflict"
+  },
+  {
+    "id": "simple_005",
+    "question": "Who did Vladimir Putin meet with on 2014-05-06?",
+    "category": "simple_entity",
+    "expected_entities_needed": [
+      "Vladimir Putin",
+      "2014-05-06"
+    ],
+    "requires_implicit_expansion": false,
+    "why_diverse": "Tests leader-level diplomatic engagement before major anniversaries"
+  },
+  {
+    "id": "simple_006",
+    "question": "What did Israel announce on 2014-07-08?",
+    "category": "simple_entity",
+    "expected_entities_needed": [
+      "Israel",
+      "2014-07-08"
+    ],
+    "requires_implicit_expansion": false,
+    "why_diverse": "Captures a military or security announcement during the Gaza conflict"
+  },
+  {
+    "id": "simple_007",
+    "question": "Who did Angela Merkel meet with in September 2014?",
+    "category": "simple_entity",
+    "expected_entities_needed": [
+      "Angela Merkel",
+      "September 2014"
+    ],
+    "requires_implicit_expansion": false,
+    "why_diverse": "Tests European diplomatic activity during the Ukraine crisis"
+  },
+  {
+    "id": "simple_008",
+    "question": "What action did France take on 2014-09-03?",
+    "category": "simple_entity",
+    "expected_entities_needed": [
+      "France",
+      "2014-09-03"
+    ],
+    "requires_implicit_expansion": false,
+    "why_diverse": "Focuses on a single-country military or policy decision related to ISIS"
+  },
+  {
+    "id": "simple_009",
+    "question": "Who did John Kerry meet with on 2015-02-12?",
+    "category": "simple_entity",
+    "expected_entities_needed": [
+      "John Kerry",
+      "2015-02-12"
+    ],
+    "requires_implicit_expansion": false,
+    "why_diverse": "Captures US diplomatic engagement tied to the Minsk II agreement timeframe"
+  },
+  {
+    "id": "simple_010",
+    "question": "What did Saudi Arabia do on 2015-03-26?",
+    "category": "simple_entity",
+    "expected_entities_needed": [
+      "Saudi Arabia",
+      "2015-03-26"
+    ],
+    "requires_implicit_expansion": false,
+    "why_diverse": "Tests recognition of a single-country military intervention start date"
+  },
+  {
+    "id": "multi_01",
+    "question": "What diplomatic interaction occurred between Russia and Ukraine in March 2014, shortly after the annexation of Crimea?",
+    "category": "multi_entity",
+    "expected_entities_needed": [
+      "Russia",
+      "Ukraine",
+      "March 2014",
+      "Crimea"
+    ],
+    "requires_implicit_expansion": false,
+    "why_diverse": "Tests direct bilateral interaction between two countries with a precise temporal constraint during a major geopolitical crisis"
+  },
+  {
+    "id": "multi_02",
+    "question": "Which country first condemned Israel\u2019s actions in Gaza during the July 2014 conflict, and when did this statement occur?",
+    "category": "multi_entity",
+    "expected_entities_needed": [
+      "Israel",
+      "Gaza",
+      "condemning country",
+      "July 2014"
+    ],
+    "requires_implicit_expansion": false,
+    "why_diverse": "Requires identifying an interacting third country in relation to Israel and Gaza with temporal ordering"
+  },
+  {
+    "id": "multi_03",
+    "question": "Who mediated talks between the United States and Iran leading up to the 2015 nuclear agreement?",
+    "category": "multi_entity",
+    "expected_entities_needed": [
+      "United States",
+      "Iran",
+      "mediator country or organization"
+    ],
+    "requires_implicit_expansion": true,
+    "why_diverse": "Involves at least three actors and requires identifying a mediating country or organization"
+  },
+  {
+    "id": "multi_04",
+    "question": "What military or security cooperation occurred between Saudi Arabia and Egypt after January 2015?",
+    "category": "multi_entity",
+    "expected_entities_needed": [
+      "Saudi Arabia",
+      "Egypt",
+      "military cooperation",
+      "post-January 2015"
+    ],
+    "requires_implicit_expansion": false,
+    "why_diverse": "Tests bilateral security coordination involving two sovereign states with a temporal filter"
+  },
+  {
+    "id": "multi_05",
+    "question": "Which NATO member states criticized Russia following its actions in Ukraine in 2014?",
+    "category": "multi_entity",
+    "expected_entities_needed": [
+      "Russia",
+      "Ukraine",
+      "NATO",
+      "NATO member states"
+    ],
+    "requires_implicit_expansion": true,
+    "why_diverse": "Requires expanding from an organization to multiple member states interacting with Russia and Ukraine"
+  },
+  {
+    "id": "multi_06",
+    "question": "What was the last recorded diplomatic engagement between China and Japan in 2015?",
+    "category": "multi_entity",
+    "expected_entities_needed": [
+      "China",
+      "Japan",
+      "diplomatic engagement",
+      "2015"
+    ],
+    "requires_implicit_expansion": false,
+    "why_diverse": "Tests identification of the final interaction between two countries within a fixed year"
+  },
+  {
+    "id": "multi_07",
+    "question": "Which European Union member country supported Ukraine politically in 2014, and what form did that support take?",
+    "category": "multi_entity",
+    "expected_entities_needed": [
+      "Ukraine",
+      "European Union",
+      "EU member states"
+    ],
+    "requires_implicit_expansion": true,
+    "why_diverse": "Involves reasoning over multiple countries connected via organizational membership and political action"
+  },
+  {
+    "id": "multi_08",
+    "question": "What protests or civil unrest events occurred in Venezuela before May 2014, and how did the government respond?",
+    "category": "multi_entity",
+    "expected_entities_needed": [
+      "Venezuela",
+      "protest groups",
+      "government",
+      "before May 2014"
+    ],
+    "requires_implicit_expansion": false,
+    "why_diverse": "Connects non-state actors and government entities within a domestic conflict context and temporal constraint"
+  },
+  {
+    "id": "multi_09",
+    "question": "Which regional organization issued statements regarding the conflict between Russia and Ukraine in late 2014?",
+    "category": "multi_entity",
+    "expected_entities_needed": [
+      "Russia",
+      "Ukraine",
+      "regional organizations"
+    ],
+    "requires_implicit_expansion": true,
+    "why_diverse": "Requires identifying an organization interacting with multiple states involved in a conflict"
+  },
+  {
+    "id": "multi_10",
+    "question": "What cooperation occurred between the United States and its Middle Eastern allies against ISIS in 2015?",
+    "category": "multi_entity",
+    "expected_entities_needed": [
+      "United States",
+      "ISIS",
+      "Middle Eastern allied countries"
+    ],
+    "requires_implicit_expansion": true,
+    "why_diverse": "Tests inference over multi-state coalitions coordinating actions against a non-state actor"
+  },
+  {
+    "id": "temp_01",
+    "question": "Who was the first foreign leader to visit Ukraine after the annexation of Crimea in March 2014?",
+    "category": "temporal",
+    "expected_entities_needed": [
+      "Ukraine",
+      "Crimea",
+      "Foreign political leaders",
+      "Annexation of Crimea"
+    ],
+    "requires_implicit_expansion": false
+  },
+  {
+    "id": "temp_02",
+    "question": "What was the first military action Russia took after NATO increased its presence in Eastern Europe in 2014?",
+    "category": "temporal",
+    "expected_entities_needed": [
+      "Russia",
+      "NATO",
+      "Eastern Europe",
+      "Military actions"
+    ],
+    "requires_implicit_expansion": false
+  },
+  {
+    "id": "temp_03",
+    "question": "Before the Paris climate conference in November 2015, what commitment did Germany announce regarding emissions reduction?",
+    "category": "temporal",
+    "expected_entities_needed": [
+      "Germany",
+      "Paris Climate Conference 2015",
+      "Emissions reduction commitments"
+    ],
+    "requires_implicit_expansion": false
+  },
+  {
+    "id": "temp_04",
+    "question": "After the Islamic State captured Mosul in June 2014, which country first launched airstrikes against the group?",
+    "category": "temporal",
+    "expected_entities_needed": [
+      "Islamic State",
+      "Mosul",
+      "Countries conducting airstrikes"
+    ],
+    "requires_implicit_expansion": true
+  },
+  {
+    "id": "temp_05",
+    "question": "What was the last diplomatic action taken by the United States before restoring relations with Cuba in December 2014?",
+    "category": "temporal",
+    "expected_entities_needed": [
+      "United States",
+      "Cuba",
+      "Diplomatic actions",
+      "Restoration of relations"
+    ],
+    "requires_implicit_expansion": false
+  },
+  {
+    "id": "temp_06",
+    "question": "Who responded first after North Korea conducted its nuclear test in January 2015?",
+    "category": "temporal",
+    "expected_entities_needed": [
+      "North Korea",
+      "Nuclear test January 2015",
+      "Responding countries or organizations"
+    ],
+    "requires_implicit_expansion": true
+  },
+  {
+    "id": "temp_07",
+    "question": "Before the signing of the Iran nuclear deal in July 2015, what sanction-related announcement did the European Union make?",
+    "category": "temporal",
+    "expected_entities_needed": [
+      "Iran",
+      "European Union",
+      "Iran nuclear deal",
+      "Sanctions announcements"
+    ],
+    "requires_implicit_expansion": false
+  },
+  {
+    "id": "temp_08",
+    "question": "After Saudi Arabia launched its intervention in Yemen in March 2015, which allied country first provided logistical support?",
+    "category": "temporal",
+    "expected_entities_needed": [
+      "Saudi Arabia",
+      "Yemen",
+      "Allied countries",
+      "Military intervention"
+    ],
+    "requires_implicit_expansion": true
+  },
+  {
+    "id": "temp_09",
+    "question": "What was the first action taken by the African Union after the outbreak of violence in South Sudan in 2014?",
+    "category": "temporal",
+    "expected_entities_needed": [
+      "African Union",
+      "South Sudan",
+      "Violence outbreak 2014",
+      "AU actions"
+    ],
+    "requires_implicit_expansion": false
+  },
+  {
+    "id": "temp_10",
+    "question": "Before the G7 summit in Germany in June 2015, what position did Japan announce regarding Russia\u2019s participation?",
+    "category": "temporal",
+    "expected_entities_needed": [
+      "Japan",
+      "G7",
+      "Germany",
+      "Russia",
+      "G7 summit 2015"
+    ],
+    "requires_implicit_expansion": true
+  },
+  {
+    "id": "imp_01",
+    "question": "When Russia annexed Crimea in March 2014, how did NATO allies respond in the weeks that followed?",
+    "category": "implicit relation",
+    "expected_entities_needed": [
+      "Russia",
+      "Crimea",
+      "NATO",
+      "NATO member states"
+    ],
+    "requires_implicit_expansion": true
+  },
+  {
+    "id": "imp_02",
+    "question": "After the United States began airstrikes against ISIS in Iraq in August 2014, what actions did its coalition allies take before the end of 2014?",
+    "category": "implicit relation",
+    "expected_entities_needed": [
+      "United States",
+      "ISIS",
+      "Iraq",
+      "US-led coalition allies"
+    ],
+    "requires_implicit_expansion": true
+  },
+  {
+    "id": "imp_03",
+    "question": "What was the European Union\u2019s response after one of its member states, Greece, opposed additional sanctions on Russia in early 2015?",
+    "category": "implicit relation",
+    "expected_entities_needed": [
+      "Greece",
+      "European Union",
+      "Russia"
+    ],
+    "requires_implicit_expansion": true
+  },
+  {
+    "id": "imp_04",
+    "question": "When North Korea conducted missile tests in July 2014, how did South Korea\u2019s allies react in the days immediately after?",
+    "category": "implicit relation",
+    "expected_entities_needed": [
+      "North Korea",
+      "South Korea",
+      "United States",
+      "South Korean allies"
+    ],
+    "requires_implicit_expansion": true
+  },
+  {
+    "id": "imp_05",
+    "question": "After Israel launched military operations in Gaza in July 2014, what stance did its key ally, the United States, take at the United Nations?",
+    "category": "implicit relation",
+    "expected_entities_needed": [
+      "Israel",
+      "Gaza",
+      "United States",
+      "United Nations"
+    ],
+    "requires_implicit_expansion": true
+  },
+  {
+    "id": "imp_06",
+    "question": "How did ASEAN member states respond after China increased its activities in the South China Sea in late 2014?",
+    "category": "implicit relation",
+    "expected_entities_needed": [
+      "China",
+      "South China Sea",
+      "ASEAN",
+      "ASEAN member states"
+    ],
+    "requires_implicit_expansion": true
+  },
+  {
+    "id": "imp_07",
+    "question": "When Saudi Arabia launched military intervention in Yemen in March 2015, how did its Gulf Cooperation Council allies react during the first month?",
+    "category": "implicit relation",
+    "expected_entities_needed": [
+      "Saudi Arabia",
+      "Yemen",
+      "Gulf Cooperation Council",
+      "GCC member states"
+    ],
+    "requires_implicit_expansion": true
+  },
+  {
+    "id": "imp_08",
+    "question": "After Ukraine signed an association agreement with the European Union in 2014, what did Russia\u2019s allies do in response later that year?",
+    "category": "implicit relation",
+    "expected_entities_needed": [
+      "Ukraine",
+      "European Union",
+      "Russia",
+      "Russia's allies"
+    ],
+    "requires_implicit_expansion": true
+  },
+  {
+    "id": "imp_09",
+    "question": "What actions did NATO take after Turkey, a member state, requested consultations following border incidents with Syria in 2015?",
+    "category": "implicit relation",
+    "expected_entities_needed": [
+      "Turkey",
+      "Syria",
+      "NATO"
+    ],
+    "requires_implicit_expansion": true
+  },
+  {
+    "id": "imp_10",
+    "question": "When France participated in airstrikes against ISIS in Syria in late 2015, how did its European allies respond shortly afterward?",
+    "category": "implicit relation",
+    "expected_entities_needed": [
+      "France",
+      "ISIS",
+      "Syria",
+      "European allies"
+    ],
+    "requires_implicit_expansion": true
+  },
+  {
+    "id": "imp_11",
+    "question": "After the United States announced new sanctions on Russia in December 2014, how did its European allies respond in the following weeks?",
+    "category": "implicit relation",
+    "expected_entities_needed": [
+      "United States",
+      "Russia",
+      "European allies",
+      "European Union"
+    ],
+    "requires_implicit_expansion": true
+  },
+  {
+    "id": "imp_12",
+    "question": "When Egypt launched a military campaign against militant groups in Libya in early 2015, what actions did its regional allies take afterward?",
+    "category": "implicit relation",
+    "expected_entities_needed": [
+      "Egypt",
+      "Libya",
+      "regional allies",
+      "Arab League"
+    ],
+    "requires_implicit_expansion": true
+  },
+  {
+    "id": "imp_13",
+    "question": "How did NATO respond after Poland, a member state, called for increased security assurances following Russian military exercises in 2014?",
+    "category": "implicit relation",
+    "expected_entities_needed": [
+      "Poland",
+      "Russia",
+      "NATO"
+    ],
+    "requires_implicit_expansion": true
+  },
+  {
+    "id": "imp_14",
+    "question": "After Iran reached a preliminary nuclear agreement with world powers in April 2015, how did its regional allies react in the Middle East?",
+    "category": "implicit relation",
+    "expected_entities_needed": [
+      "Iran",
+      "nuclear agreement",
+      "regional allies",
+      "Middle East"
+    ],
+    "requires_implicit_expansion": true
+  },
+  {
+    "id": "imp_15",
+    "question": "When Japan strengthened defense cooperation with the United States in 2015, how did China\u2019s allies respond later that year?",
+    "category": "implicit relation",
+    "expected_entities_needed": [
+      "Japan",
+      "United States",
+      "China",
+      "China's allies"
+    ],
+    "requires_implicit_expansion": true
+  },
+  {
+    "id": "complex_01",
+    "question": "Which country conducted military cooperation events with both the United States and Turkey after March 2014 but before the end of 2015, and did so only after its first recorded diplomatic protest involving Russia?",
+    "category": "complex reasoning",
+    "expected_entities_needed": [
+      "United States",
+      "Turkey",
+      "Russia",
+      "Military cooperation events",
+      "Diplomatic protest events",
+      "Target country"
+    ],
+    "requires_implicit_expansion": false
+  },
+  {
+    "id": "complex_02",
+    "question": "Which Middle Eastern country increased diplomatic engagements with countries allied to Iran after January 2015, following a reduction in its own direct interactions with Iran during 2014?",
+    "category": "complex reasoning",
+    "expected_entities_needed": [
+      "Iran",
+      "Iran-allied countries (e.g., Syria, Iraq)",
+      "Diplomatic engagement events",
+      "Middle Eastern countries",
+      "Event timelines (2014\u20132015)"
+    ],
+    "requires_implicit_expansion": true
+  },
+  {
+    "id": "complex_03",
+    "question": "What was the first country to host both a Russian delegation and a NATO-member delegation in separate diplomatic visits during 2014, and which of those visits occurred later in the year?",
+    "category": "complex reasoning",
+    "expected_entities_needed": [
+      "Russia",
+      "NATO member states",
+      "Diplomatic visit events",
+      "Host country",
+      "Event dates in 2014"
+    ],
+    "requires_implicit_expansion": true
+  },
+  {
+    "id": "complex_04",
+    "question": "Which African country experienced opposition-led protests before receiving economic aid from the European Union in 2015, and did that aid occur after similar EU assistance to one of its neighboring countries?",
+    "category": "complex reasoning",
+    "expected_entities_needed": [
+      "African countries",
+      "Opposition groups",
+      "Protest events",
+      "European Union",
+      "Economic aid events",
+      "Neighboring country relationships",
+      "2015 timeline"
+    ],
+    "requires_implicit_expansion": true
+  },
+  {
+    "id": "complex_05",
+    "question": "Which Asian country held negotiations with both China and Japan in 2014, and then aligned diplomatically with a U.S.-led regional partner before its last recorded trade agreement in 2015?",
+    "category": "complex reasoning",
+    "expected_entities_needed": [
+      "China",
+      "Japan",
+      "United States",
+      "U.S.-led regional partners (e.g., South Korea, Philippines)",
+      "Negotiation events",
+      "Diplomatic alignment events",
+      "Trade agreement events",
+      "Asian countries",
+      "2014\u20132015 timeline"
+    ],
+    "requires_implicit_expansion": true
+  }
+]

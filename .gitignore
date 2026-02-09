@@ -1,0 +1,25 @@
+# mac
+.DS_Store
+
+# python
+__pycache__/
+*.pyc
+*.pyo
+
+# env
+.venv/
+venv/
+.env
+
+# training artifacts / checkpoints
+checkpoints/
+Checkpoints_TTransE/
+*.pt
+*.ckpt
+*.bin
+*.zip
+
+# logs
+wandb/
+runs/
+outputs/

@@ -1,0 +1,876 @@
+[
+  {
+    "id": 107,
+    "relation_keyword": "threaten",
+    "quadruple": {
+      "s": "Militant (Malaysia)",
+      "p": "Threaten with military force",
+      "o": "Malaysia",
+      "t": "2014-08-16"
+    },
+    "question_explicit": "Who threatened Malaysia with military force on 2014-08-16?",
+    "question_implicit": "Once Malaysia was threatened with military force, who made the threat?",
+    "answer": "Militant (Malaysia)",
+    "temporalSignal": {
+      "time_anchor": "2014-08-16",
+      "relation": "after"
+    }
+  },
+  {
+    "id": 67,
+    "relation_keyword": "visit",
+    "quadruple": {
+      "s": "South Africa",
+      "p": "Make a visit",
+      "o": "Thailand",
+      "t": "2014-07-29"
+    },
+    "raw_relation_name": "Make a visit",
+    "question_explicit": "To which country did South Africa make a visit on 2014-07-29?",
+    "question_implicit": "During the time when South Africa made a visit, which country did they visit?",
+    "answer": "Thailand",
+    "temporalSignal": {
+      "time_anchor": "2014-07-29",
+      "relation": "when"
+    }
+  },
+  {
+    "id": 76,
+    "relation_keyword": "criticize",
+    "quadruple": {
+      "s": "Haider Al-Abadi",
+      "p": "Criticize or denounce",
+      "o": "Militia (Iraq)",
+      "t": "2014-08-27"
+    },
+    "raw_relation_name": "Criticize or denounce",
+    "question_explicit": "Who did Haider Al-Abadi denounce on 2014-08-27?",
+    "question_implicit": "During the time when Haider Al-Abadi denounced someone, who did he denounce?",
+    "answer": "Militia (Iraq)",
+    "temporalSignal": {
+      "time_anchor": "2014-08-27",
+      "relation": "after"
+    }
+  },
+  {
+    "id": 54,
+    "relation_keyword": "praise",
+    "quadruple": {
+      "s": "Abdullah Gül",
+      "p": "Praise or endorse",
+      "o": "Legislature (Turkey)",
+      "t": "2014-02-22"
+    },
+    "raw_relation_name": "Praise or endorse",
+    "question_explicit": "Who did Abdullah Gül praise on 2014-02-22?",
+    "question_implicit": "Following the praise of Abdullah Gül, who was endorsed?",
+    "answer": "Legislature (Turkey)",
+    "temporalSignal": {
+      "time_anchor": "2014-02-22",
+      "relation": "after"
+    }
+  },
+  {
+    "id": 47,
+    "relation_keyword": "visit",
+    "quadruple": {
+      "s": "Vietnam",
+      "p": "Host a visit",
+      "o": "Barack Obama",
+      "t": "2014-07-14"
+    },
+    "raw_relation_name": "Host a visit",
+    "question_explicit": "For whom did Vietnam host a visit on 2014-07-14?",
+    "question_implicit": "At the time when Vietnam hosted a visit, who visited Vietnam?",
+    "answer": "Barack Obama",
+    "temporalSignal": {
+      "time_anchor": "2014-07-14",
+      "relation": "when"
+    }
+  },
+  {
+    "id": 113,
+    "relation_keyword": "reject",
+    "quadruple": {
+      "s": "Cho Hyun-ah",
+      "p": "Reject",
+      "o": "Military Personnel (South Korea)",
+      "t": "2014-12-17"
+    },
+    "question_explicit": "Who rejected Military Personnel (South Korea) on 2014-12-17?",
+    "question_implicit": "Following the rejection of Military Personnel (South Korea), who rejected them?",
+    "answer": "Cho Hyun-ah",
+    "temporalSignal": {
+      "time_anchor": "2014-12-17",
+      "relation": "after"
+    }
+  },
+  {
+    "id": 7,
+    "relation_keyword": "meet",
+    "quadruple": {
+      "s": "Vincent C. Siew",
+      "p": "Express intent to meet or negotiate",
+      "o": "China",
+      "t": "2014-11-04"
+    },
+    "raw_relation_name": "Express intent to meet or negotiate",
+    "question_explicit": "Which country did Vincent C. Siew express intent to meet or negotiate with on 2014-11-04?",
+    "question_implicit": "When Vincent C. Siew expressed intent to meet or negotiate, which country was involved?",
+    "answer": "China",
+    "temporalSignal": {
+      "time_anchor": "2014-11-04",
+      "relation": "when"
+    }
+  },
+  {
+    "id": 89,
+    "relation_keyword": "appeal",
+    "quadruple": {
+      "s": "Fotis Kouvelis",
+      "p": "Make an appeal or request",
+      "o": "Hellenic Armed Forces",
+      "t": "2014-11-03"
+    },
+    "raw_relation_name": "Make an appeal or request",
+    "question_explicit": "To whom did Fotis Kouvelis make an appeal or request on 2014-11-03?",
+    "question_implicit": "Following the appeal from Fotis Kouvelis, who responded next?",
+    "answer": "Hellenic Armed Forces",
+    "temporalSignal": {
+      "time_anchor": "2014-11-03",
+      "relation": "after"
+    }
+  },
+  {
+    "id": 78,
+    "relation_keyword": "provide aid",
+    "quadruple": {
+      "s": "Citizen (Unidentified State Actor)",
+      "p": "Provide aid",
+      "o": "Ertharin Cousin",
+      "t": "2014-09-22"
+    },
+    "raw_relation_name": "Provide aid",
+    "question_explicit": "To whom did the citizen of Unidentified State Actor provide aid on 2014-09-22?",
+    "question_implicit": "Following the aid from the citizen of Unidentified State Actor, who benefited from it?",
+    "answer": "Ertharin Cousin",
+    "temporalSignal": {
+      "time_anchor": "2014-09-22",
+      "relation": "after"
+    }
+  },
+  {
+    "id": 59,
+    "relation_keyword": "provide aid",
+    "quadruple": {
+      "s": "Tanzania",
+      "p": "Provide aid",
+      "o": "Indigenous People (Tanzania)",
+      "t": "2014-10-13"
+    },
+    "raw_relation_name": "Provide aid",
+    "question_explicit": "To whom did Tanzania provide aid on 2014-10-13?",
+    "question_implicit": "Following the aid from Tanzania, who benefited from it?",
+    "answer": "Indigenous People (Tanzania)",
+    "temporalSignal": {
+      "time_anchor": "2014-10-13",
+      "relation": "after"
+    }
+  },
+  {
+    "id": 55,
+    "relation_keyword": "meet",
+    "quadruple": {
+      "s": "Kazakhstan",
+      "p": "Meet at a 'third' location",
+      "o": "Tajikistan",
+      "t": "2014-11-13"
+    },
+    "raw_relation_name": "Meet at a 'third' location",
+    "question_explicit": "Who did Kazakhstan meet at a 'third' location on 2014-11-13?",
+    "question_implicit": "During the meeting with Kazakhstan at a 'third' location, who was also there?",
+    "answer": "Tajikistan",
+    "temporalSignal": {
+      "time_anchor": "2014-11-13",
+      "relation": "during"
+    }
+  },
+  {
+    "id": 118,
+    "relation_keyword": "visit",
+    "quadruple": {
+      "s": "Xi Jinping",
+      "p": "Make a visit",
+      "o": "Mexico",
+      "t": "2014-07-23"
+    },
+    "question_explicit": "Which country did Xi Jinping visit on 2014-07-23?",
+    "question_implicit": "Following Xi Jinping's trip, which country did he visit?",
+    "answer": "Mexico",
+    "temporalSignal": {
+      "time_anchor": "2014-07-23",
+      "relation": "after"
+    }
+  },
+  {
+    "id": 15,
+    "relation_keyword": "meet",
+    "quadruple": {
+      "s": "John Baird",
+      "p": "Express intent to meet or negotiate",
+      "o": "Elmar Mammadyarov",
+      "t": "2014-04-11"
+    },
+    "raw_relation_name": "Express intent to meet or negotiate",
+    "question_explicit": "Who expressed intent to meet or negotiate with Elmar Mammadyarov on 2014-04-11?",
+    "question_implicit": "Following the intent to meet or negotiate with Elmar Mammadyarov, who expressed it?",
+    "answer": "John Baird",
+    "temporalSignal": {
+      "time_anchor": "2014-04-11",
+      "relation": "after"
+    }
+  },
+  {
+    "id": 62,
+    "relation_keyword": "appeal",
+    "quadruple": {
+      "s": "Sergey Viktorovich Lavrov",
+      "p": "Appeal for diplomatic cooperation (such as policy support)",
+      "o": "John Kerry",
+      "t": "2014-08-09"
+    },
+    "raw_relation_name": "Appeal for diplomatic cooperation (such as policy support)",
+    "question_explicit": "On 2014-08-09 from whom did John Kerry receive an appeal for diplomatic cooperation (such as policy support)?",
+    "question_implicit": "Regarding diplomatic cooperation (such as policy support), who appealed to John Kerry?",
+    "answer": "Sergey Viktorovich Lavrov",
+    "temporalSignal": {
+      "time_anchor": "2014-08-09",
+      "relation": "after"
+    }
+  },
+  {
+    "id": 17,
+    "relation_keyword": "threaten",
+    "quadruple": {
+      "s": "Uganda Police Force",
+      "p": "Threaten",
+      "o": "Foreign Affairs (United States)",
+      "t": "2014-07-03"
+    },
+    "raw_relation_name": "Threaten",
+    "question_explicit": "Who threatened Foreign Affairs (United States) on 2014-07-03?",
+    "question_implicit": "Following the threat toward Foreign Affairs (United States), who made the threat?",
+    "answer": "Uganda Police Force",
+    "temporalSignal": {
+      "time_anchor": "2014-07-03",
+      "relation": "after"
+    }
+  },
+  {
+    "id": 30,
+    "relation_keyword": "criticize",
+    "quadruple": {
+      "s": "Citizen (United Arab Emirates)",
+      "p": "Criticize or denounce",
+      "o": "Nuri al-Maliki",
+      "t": "2014-04-27"
+    },
+    "raw_relation_name": "Criticize or denounce",
+    "question_explicit": "Who criticized or denounced Nuri al-Maliki on 2014-04-27?",
+    "question_implicit": "After criticizing or denouncing Nuri al-Maliki, who criticized Nuri al-Maliki?",
+    "answer": "Citizen (United Arab Emirates)",
+    "temporalSignal": {
+      "time_anchor": "2014-04-27",
+      "relation": "after"
+    }
+  },
+  {
+    "id": 48,
+    "relation_keyword": "reject",
+    "quadruple": {
+      "s": "China",
+      "p": "Reject",
+      "o": "Vietnam",
+      "t": "2014-06-04"
+    },
+    "raw_relation_name": "Reject",
+    "question_explicit": "Which country rejected Vietnam on 2014-06-04?",
+    "question_implicit": "When Vietnam was rejected, which country rejected them?",
+    "answer": "China",
+    "temporalSignal": {
+      "time_anchor": "2014-06-04",
+      "relation": "after"
+    }
+  },
+  {
+    "id": 94,
+    "relation_keyword": "praise",
+    "quadruple": {
+      "s": "Ruling Coalition (Greece)",
+      "p": "Praise or endorse",
+      "o": "Head of Government (Greece)",
+      "t": "2014-05-30"
+    },
+    "question_explicit": "Who praised the Head of Government (Greece) on 2014-05-30?",
+    "question_implicit": "When the Head of Government (Greece) was endorsed, who praised them?",
+    "answer": "Ruling Coalition (Greece)",
+    "temporalSignal": {
+      "time_anchor": "2014-05-30",
+      "relation": "when"
+    }
+  },
+  {
+    "id": 75,
+    "relation_keyword": "visit",
+    "quadruple": {
+      "s": "Japan",
+      "p": "Host a visit",
+      "o": "Sheikh Hasina Wajed",
+      "t": "2014-05-26"
+    },
+    "raw_relation_name": "Host a visit",
+    "question_explicit": "For whom did Japan host a visit on 2014-05-26?",
+    "question_implicit": "Following the host of the visit from Japan, who visited Japan?",
+    "answer": "Sheikh Hasina Wajed",
+    "temporalSignal": {
+      "time_anchor": "2014-05-26",
+      "relation": "after"
+    }
+  },
+  {
+    "id": 77,
+    "relation_keyword": "meet",
+    "quadruple": {
+      "s": "Mohammad Javad Zarif",
+      "p": "Express intent to meet or negotiate",
+      "o": "John Kerry",
+      "t": "2014-10-18"
+    },
+    "raw_relation_name": "Express intent to meet or negotiate",
+    "question_explicit": "To whom did Mohammad Javad Zarif express intent to meet or negotiate on 2014-10-18?",
+    "question_implicit": "After Mohammad Javad Zarif expressed intent to negotiate, who responded?",
+    "answer": "John Kerry",
+    "temporalSignal": {
+      "time_anchor": "2014-10-18",
+      "relation": "after"
+    }
+  },
+  {
+    "id": 39,
+    "relation_keyword": "criticize",
+    "quadruple": {
+      "s": "North Korea",
+      "p": "Criticize or denounce",
+      "o": "UN Security Council",
+      "t": "2014-08-10"
+    },
+    "raw_relation_name": "Criticize or denounce",
+    "question_explicit": "Which country criticized or denounced the UN Security Council on 2014-08-10?",
+    "question_implicit": "During criticizing or denouncing the UN Security Council, which country denounced them?",
+    "answer": "North Korea",
+    "temporalSignal": {
+      "time_anchor": "2014-08-10",
+      "relation": "during"
+    }
+  },
+  {
+    "id": 44,
+    "relation_keyword": "praise",
+    "quadruple": {
+      "s": "Nabih Berri",
+      "p": "Praise or endorse",
+      "o": "Military (Lebanon)",
+      "t": "2014-08-01"
+    },
+    "raw_relation_name": "Praise or endorse",
+    "question_explicit": "What action did Nabih Berri take toward Military (Lebanon) on 2014-08-01?",
+    "question_implicit": "In response to the interaction between Nabih Berri and Military (Lebanon), what action was taken?",
+    "answer": "Praise or endorse",
+    "temporalSignal": {
+      "time_anchor": "2014-08-01",
+      "relation": "after"
+    }
+  },
+  {
+    "id": 45,
+    "relation_keyword": "provide aid",
+    "quadruple": {
+      "s": "Government (United States)",
+      "p": "Provide aid",
+      "o": "Other Authorities / Officials (China)",
+      "t": "2014-08-28"
+    },
+    "raw_relation_name": "Provide aid",
+    "question_explicit": "Who provided aid to Other Authorities / Officials (China) on 2014-08-28?",
+    "question_implicit": "After aid was provided to Other Authorities / Officials (China), who provided it?",
+    "answer": "Government (United States)",
+    "temporalSignal": {
+      "time_anchor": "2014-08-28",
+      "relation": "after"
+    }
+  },
+  {
+    "id": 57,
+    "relation_keyword": "appeal",
+    "quadruple": {
+      "s": "High Ranking Military Personnel (India)",
+      "p": "Make an appeal or request",
+      "o": "Military Personnel (India)",
+      "t": "2014-12-08"
+    },
+    "raw_relation_name": "Make an appeal or request",
+    "question_explicit": "What happened between High Ranking Military Personnel of India and Military Personnel of India on 2014-12-08?",
+    "question_implicit": "To which action of High Ranking Military Personnel of India, did Military Personnel of India respond?",
+    "answer": "Make an appeal or request",
+    "temporalSignal": {
+      "time_anchor": "2014-12-08",
+      "relation": "after"
+    }
+  },
+  {
+    "id": 20,
+    "relation_keyword": "appeal",
+    "quadruple": {
+      "s": "Citizen (Nigeria)",
+      "p": "Make an appeal or request",
+      "o": "Assemblies (Nigeria)",
+      "t": "2014-10-08"
+    },
+    "raw_relation_name": "Make an appeal or request",
+    "question_explicit": "Who made an appeal or request to Assemblies (Nigeria) on 2014-10-08?",
+    "question_implicit": "At the time when an appeal or request was made to Assemblies (Nigeria), who made it?",
+    "answer": "Citizen (Nigeria)",
+    "temporalSignal": {
+      "time_anchor": "2014-10-08",
+      "relation": "when"
+    }
+  },
+  {
+    "id": 99,
+    "relation_keyword": "visit",
+    "quadruple": {
+      "s": "New Zealand",
+      "p": "Make a visit",
+      "o": "Fiji",
+      "t": "2014-05-19"
+    },
+    "question_explicit": "Which country visited Fiji on 2014-05-19?",
+    "question_implicit": "After Fiji received a visit, which country made the visit?",
+    "answer": "New Zealand",
+    "temporalSignal": {
+      "time_anchor": "2014-05-19",
+      "relation": "after"
+    }
+  },
+  {
+    "id": 105,
+    "relation_keyword": "threaten",
+    "quadruple": {
+      "s": "Riek Machar",
+      "p": "Threaten",
+      "o": "Combatant (Justice and Equality Movement)",
+      "t": "2014-05-21"
+    },
+    "question_explicit": "Who threatened Combatant (Justice and Equality Movement) on 2014-05-21?",
+    "question_implicit": "While Combatant (Justice and Equality Movement) was threatened, who made the threat?",
+    "answer": "Riek Machar",
+    "temporalSignal": {
+      "time_anchor": "2014-05-21",
+      "relation": "when"
+    }
+  },
+  {
+    "id": 10,
+    "relation_keyword": "threaten",
+    "quadruple": {
+      "s": "Congress (Nigeria)",
+      "p": "Threaten",
+      "o": "Citizen (Nigeria)",
+      "t": "2014-01-21"
+    },
+    "raw_relation_name": "Threaten",
+    "question_explicit": "Whom did Congress (Nigeria) threaten on 2014-01-21?",
+    "question_implicit": "At the time when Congress (Nigeria) threatened, who was threatened?",
+    "answer": "Citizen (Nigeria)",
+    "temporalSignal": {
+      "time_anchor": "2014-01-21",
+      "relation": "when"
+    }
+  },
+  {
+    "id": 74,
+    "relation_keyword": "provide aid",
+    "quadruple": {
+      "s": "Environment Department/Ministry (India)",
+      "p": "Provide aid",
+      "o": "Citizen (India)",
+      "t": "2014-10-12"
+    },
+    "raw_relation_name": "Provide aid",
+    "question_explicit": "From whom did the citizen of India get aid on 2014-10-12?",
+    "question_implicit": "During the aid for the citizen of India, who helped them?",
+    "answer": "Environment Department/Ministry (India)",
+    "temporalSignal": {
+      "time_anchor": "2014-10-12",
+      "relation": "during"
+    }
+  },
+  {
+    "id": 33,
+    "relation_keyword": "meet",
+    "quadruple": {
+      "s": "Japan",
+      "p": "Express intent to meet or negotiate",
+      "o": "Chuck Hagel",
+      "t": "2014-06-27"
+    },
+    "raw_relation_name": "Express intent to meet or negotiate",
+    "question_explicit": "Which country expressed intent to meet or negotiate with Chuck Hagel on 2014-06-27?",
+    "question_implicit": "After intent to meet or negotiate was expressed, which country expressed it?",
+    "answer": "Japan",
+    "temporalSignal": {
+      "time_anchor": "2014-06-27",
+      "relation": "after"
+    }
+  },
+  {
+    "id": 122,
+    "relation_keyword": "threaten",
+    "quadruple": {
+      "s": "Men (United Kingdom)",
+      "p": "Threaten",
+      "o": "Boris Johnson",
+      "t": "2014-04-02"
+    },
+    "question_explicit": "Who threatened Boris Johnson on 2014-04-02?",
+    "question_implicit": "Once Boris Johnson was threatened, who made the threat?",
+    "answer": "Men (United Kingdom)",
+    "temporalSignal": {
+      "time_anchor": "2014-04-02",
+      "relation": "after"
+    }
+  },
+  {
+    "id": 9,
+    "relation_keyword": "criticize",
+    "quadruple": {
+      "s": "North Korea",
+      "p": "Criticize or denounce",
+      "o": "Japan",
+      "t": "2014-05-20"
+    },
+    "raw_relation_name": "Criticize or denounce",
+    "question_explicit": "Who criticized or denounced Japan on 2014-05-20?",
+    "question_implicit": "After the criticism of Japan, who criticized Japan?",
+    "answer": "North Korea",
+    "temporalSignal": {
+      "time_anchor": "2014-05-20",
+      "relation": "after"
+    }
+  },
+  {
+    "id": 38,
+    "relation_keyword": "threaten",
+    "quadruple": {
+      "s": "Democratic Party (Nigeria)",
+      "p": "Threaten",
+      "o": "Citizen (Nigeria)",
+      "t": "2014-10-13"
+    },
+    "raw_relation_name": "Threaten",
+    "question_explicit": "Who threatened Citizen (Nigeria) on 2014-10-13?",
+    "question_implicit": "In response to the threatening of Citizen (Nigeria), who threatened them?",
+    "answer": "Democratic Party (Nigeria)",
+    "temporalSignal": {
+      "time_anchor": "2014-10-13",
+      "relation": "after"
+    }
+  },
+  {
+    "id": 60,
+    "relation_keyword": "visit",
+    "quadruple": {
+      "s": "Guatemala",
+      "p": "Host a visit",
+      "o": "John F. Kelly",
+      "t": "2014-04-03"
+    },
+    "raw_relation_name": "Host a visit",
+    "question_explicit": "For whom did Guatemala host a visit on 2014-04-03?",
+    "question_implicit": "During the visit hosted by Guatemala, who came to Guatemala?",
+    "answer": "John F. Kelly",
+    "temporalSignal": {
+      "time_anchor": "2014-04-03",
+      "relation": "during"
+    }
+  },
+  {
+    "id": 71,
+    "relation_keyword": "consult",
+    "quadruple": {
+      "s": "Government (Kenya)",
+      "p": "Consult",
+      "o": "Lawyer/Attorney (Kenya)",
+      "t": "2014-10-28"
+    },
+    "raw_relation_name": "Consult",
+    "question_explicit": "From whom did Lawyer/Attorney in Kenya receive the consultation on 2014-10-28?",
+    "question_implicit": "When the Lawyer/Attorney in Kenya was consulted, who initiated it?",
+    "answer": "Government (Kenya)",
+    "temporalSignal": {
+      "time_anchor": "2014-10-28",
+      "relation": "when"
+    }
+  },
+  {
+    "id": 34,
+    "relation_keyword": "criticize",
+    "quadruple": {
+      "s": "Company - Owner or Operator (India)",
+      "p": "Criticize or denounce",
+      "o": "Citizen (India)",
+      "t": "2014-03-03"
+    },
+    "raw_relation_name": "Criticize or denounce",
+    "question_explicit": "Who criticized or denounced Citizen (India) on 2014-03-03?",
+    "question_implicit": "During the act of criticizing or denouncing Citizen (India), who criticized them?",
+    "answer": "Company - Owner or Operator (India)",
+    "temporalSignal": {
+      "time_anchor": "2014-03-03",
+      "relation": "during"
+    }
+  },
+  {
+    "id": 23,
+    "relation_keyword": "provide aid",
+    "quadruple": {
+      "s": "Police (Australia)",
+      "p": "Provide aid",
+      "o": "Citizen (Australia)",
+      "t": "2014-02-16"
+    },
+    "raw_relation_name": "Provide aid",
+    "question_explicit": "Who did Police (Australia) provide aid to on 2014-02-16?",
+    "question_implicit": "At the time when Citizen (Australia) received aid, who received it?",
+    "answer": "Citizen (Australia)",
+    "temporalSignal": {
+      "time_anchor": "2014-02-16",
+      "relation": "when"
+    }
+  },
+  {
+    "id": 72,
+    "relation_keyword": "praise",
+    "quadruple": {
+      "s": "Jason C. Hu",
+      "p": "Praise or endorse",
+      "o": "Lin Chia-lung",
+      "t": "2014-11-25"
+    },
+    "raw_relation_name": "Praise or endorse",
+    "question_explicit": "Who did Jason C. Hu endorse on 2014-11-25?",
+    "question_implicit": "After the endorsement from Jason C. Hu, who was praised?",
+    "answer": "Lin Chia-lung",
+    "temporalSignal": {
+      "time_anchor": "2014-11-25",
+      "relation": "after"
+    }
+  },
+  {
+    "id": 19,
+    "relation_keyword": "reject",
+    "quadruple": {
+      "s": "Lawmaker (Greece)",
+      "p": "Reject",
+      "o": "Antonis Samaras",
+      "t": "2014-12-17"
+    },
+    "raw_relation_name": "Reject",
+    "question_explicit": "Who rejected Antonis Samaras on 2014-12-17?",
+    "question_implicit": "At the time Antonis Samaras was rejected, who rejected him?",
+    "answer": "Lawmaker (Greece)",
+    "temporalSignal": {
+      "time_anchor": "2014-12-17",
+      "relation": "when"
+    }
+  },
+  {
+    "id": 51,
+    "relation_keyword": "consult",
+    "quadruple": {
+      "s": "Victoria Nuland",
+      "p": "Consult",
+      "o": "Edgars Rinkevics",
+      "t": "2014-05-15"
+    },
+    "raw_relation_name": "Consult",
+    "question_explicit": "What happened on 2014-05-15 between Victoria Nuland and Edgars Rinkevics?",
+    "question_implicit": "Following Victoria Nuland’s action, what did Edgars Rinkevics do?",
+    "answer": "Consult",
+    "temporalSignal": {
+      "time_anchor": "2014-05-15",
+      "relation": "after"
+    }
+  },
+  {
+    "id": 22,
+    "relation_keyword": "provide aid",
+    "quadruple": {
+      "s": "Foreign Affairs (Israel)",
+      "p": "Provide aid",
+      "o": "Japan",
+      "t": "2014-06-19"
+    },
+    "raw_relation_name": "Provide aid",
+    "question_explicit": "Who provided aid to Japan on 2014-06-19?",
+    "question_implicit": "After aid was provided to Japan, who provided it?",
+    "answer": "Foreign Affairs (Israel)",
+    "temporalSignal": {
+      "time_anchor": "2014-06-19",
+      "relation": "after"
+    }
+  },
+  {
+    "id": 84,
+    "relation_keyword": "consult",
+    "quadruple": {
+      "s": "Royal Administration (Saudi Arabia)",
+      "p": "Consult",
+      "o": "Abu Bakr Abdullah al-Qirbi",
+      "t": "2014-05-14"
+    },
+    "raw_relation_name": "Consult",
+    "question_explicit": "Who did Royal Administration in Saudi Arabia consult on 2014-05-14?",
+    "question_implicit": "After the querying from Royal Administration in Saudi Arabia, who offered consultation?",
+    "answer": "Abu Bakr Abdullah al-Qirbi",
+    "temporalSignal": {
+      "time_anchor": "2014-05-14",
+      "relation": "after"
+    }
+  },
+  {
+    "id": 25,
+    "relation_keyword": "consult",
+    "quadruple": {
+      "s": "Media Personnel (China)",
+      "p": "Consult",
+      "o": "John Kerry",
+      "t": "2014-02-21"
+    },
+    "raw_relation_name": "Consult",
+    "question_explicit": "What did Media Personnel (China) do with John Kerry on 2014-02-21?",
+    "question_implicit": "While Media Personnel (China) and John Kerry were involved, what action took place?",
+    "answer": "Consult",
+    "temporalSignal": {
+      "time_anchor": "2014-02-21",
+      "relation": "when"
+    }
+  },
+  {
+    "id": 35,
+    "relation_keyword": "meet",
+    "quadruple": {
+      "s": "Cabinet / Council of Ministers / Advisors (United States)",
+      "p": "Meet at a 'third' location",
+      "o": "Sergey Viktorovich Lavrov",
+      "t": "2014-12-04"
+    },
+    "raw_relation_name": "Meet at a 'third' location",
+    "question_explicit": "Whom did the Cabinet / Council of Ministers / Advisors (United States) meet at a 'third' location on 2014-12-04?",
+    "question_implicit": "When the Cabinet / Council of Ministers / Advisors (United States) met at a 'third' location, who did they meet?",
+    "answer": "Sergey Viktorovich Lavrov",
+    "temporalSignal": {
+      "time_anchor": "2014-12-04",
+      "relation": "when"
+    }
+  },
+  {
+    "id": 43,
+    "relation_keyword": "praise",
+    "quadruple": {
+      "s": "Mario Monti",
+      "p": "Praise or endorse",
+      "o": "Evangelos Venizelos",
+      "t": "2014-07-10"
+    },
+    "raw_relation_name": "Praise or endorse",
+    "question_explicit": "Who praised or endorsed Evangelos Venizelos on 2014-07-10?",
+    "question_implicit": "At the time Evangelos Venizelos was praised or endorsed, who praised him?",
+    "answer": "Mario Monti",
+    "temporalSignal": {
+      "time_anchor": "2014-07-10",
+      "relation": "when"
+    }
+  },
+  {
+    "id": 6,
+    "relation_keyword": "consult",
+    "quadruple": {
+      "s": "Shimon Peres",
+      "p": "Consult",
+      "o": "Tony Blair",
+      "t": "2014-08-01"
+    },
+    "raw_relation_name": "Consult",
+    "question_explicit": "Who did Shimon Peres consult on 2014-08-01?",
+    "question_implicit": "At the time when Shimon Peres consulted, who was consulted?",
+    "answer": "Tony Blair",
+    "temporalSignal": {
+      "time_anchor": "2014-08-01",
+      "relation": "when"
+    }
+  },
+  {
+    "id": 119,
+    "relation_keyword": "threaten",
+    "quadruple": {
+      "s": "Citizen (India)",
+      "p": "Threaten",
+      "o": "Employee (India)",
+      "t": "2014-07-02"
+    },
+    "question_explicit": "Who threatened Employee (India) on 2014-07-02?",
+    "question_implicit": "At the time Employee (India) was threatened, who made the threat?",
+    "answer": "Citizen (India)",
+    "temporalSignal": {
+      "time_anchor": "2014-07-02",
+      "relation": "when"
+    }
+  },
+  {
+    "id": 41,
+    "relation_keyword": "reject",
+    "quadruple": {
+      "s": "Benjamin Netanyahu",
+      "p": "Reject",
+      "o": "Barack Obama",
+      "t": "2014-07-29"
+    },
+    "raw_relation_name": "Reject",
+    "question_explicit": "What action was taken by Benjamin Netanyahu toward Barack Obama on 2014-07-29?",
+    "question_implicit": "After Benjamin Netanyahu acted towards Barack Obama, what action did he take?",
+    "answer": "Reject",
+    "temporalSignal": {
+      "time_anchor": "2014-07-29",
+      "relation": "after"
+    }
+  },
+  {
+    "id": 49,
+    "relation_keyword": "meet",
+    "quadruple": {
+      "s": "Ryoo Kihl-jae",
+      "p": "Express intent to meet or negotiate",
+      "o": "North Korea",
+      "t": "2014-12-31"
+    },
+    "raw_relation_name": "Express intent to meet or negotiate",
+    "question_explicit": "With whom did Ryoo Kihl-jae express intent to negotiate on 2014-12-31?",
+    "question_implicit": "Following Ryoo Kihl-jae's intention, which country did he want to meet?",
+    "answer": "North Korea",
+    "temporalSignal": {
+      "time_anchor": "2014-12-31",
+      "relation": "after"
+    }
+  }
+]
