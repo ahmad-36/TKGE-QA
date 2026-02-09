@@ -1,3 +1,12 @@
+# checkpoints: ignore by default, allow only required small artifacts
+Checkpoints_TTransE/*
+!Checkpoints_TTransE/tkge_artifacts_icews14_ttranse/
+!Checkpoints_TTransE/tkge_artifacts_icews14_ttranse/ttranse_icews14_best.pt
+!Checkpoints_TTransE/tkge_artifacts_icews14_ttranse/icews14/
+!Checkpoints_TTransE/tkge_artifacts_icews14_ttranse/icews14/entity2id.txt
+!Checkpoints_TTransE/tkge_artifacts_icews14_ttranse/icews14/relation2id.txt
+!Checkpoints_TTransE/tkge_artifacts_icews14_ttranse/icews14/time2id.txt
+
 # mac
 .DS_Store
 
