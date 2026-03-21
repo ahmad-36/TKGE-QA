@@ -1,34 +1,11 @@
-# mac
 .DS_Store
-
-# python
 __pycache__/
 *.pyc
 *.pyo
-
-# env
 .venv/
 venv/
 .env
-
-# logs
 wandb/
 runs/
 outputs/
-
-# training artifacts / checkpoints (ignore by default)
-checkpoints/
-Checkpoints_TTransE/*
-*.ckpt
-*.bin
 *.zip
-
-# allow only required small TKGE artifacts
-!Checkpoints_TTransE/tkge_artifacts_icews14_ttranse/
-!Checkpoints_TTransE/tkge_artifacts_icews14_ttranse/ttranse_icews14_best.pt
-!Checkpoints_TTransE/tkge_artifacts_icews14_ttranse/icews14/
-!Checkpoints_TTransE/tkge_artifacts_icews14_ttranse/icews14/entity2id.txt
-!Checkpoints_TTransE/tkge_artifacts_icews14_ttranse/icews14/relation2id.txt
-!Checkpoints_TTransE/tkge_artifacts_icews14_ttranse/icews14/time2id.txt
-
-
