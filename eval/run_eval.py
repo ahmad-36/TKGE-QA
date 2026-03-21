@@ -6,7 +6,6 @@ from typing import Any, Dict, List, Optional
 
 import torch.cuda
 
-
 REPO_ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
 sys.path.insert(0, REPO_ROOT)
 from pipeline import TKGQAPipeline
@@ -71,6 +70,7 @@ def get_rank(results: Dict[str, Any], gold: Dict[str, Any], top_k: int) -> Optio
             break
     return found
 
+
 def evaluate(
     pipeline: TKGQAPipeline,
     data: List[Dict[str, Any]],
@@ -78,19 +78,16 @@ def evaluate(
     top_k: int = 10,
     pool_k: Optional[int] = None,
     rerank_cap: int = 200,
-    use_rewriter: bool = True,
-    use_implicit: bool = True,
+   # use_rewriter: bool = True,
+    # use_implicit: bool = True,
     use_time_filter: bool = True,
     use_reranker: bool = True,
-    print_answers: bool = True,
-    max_print: int = 20,
     debug_first_n: int = 0,
     use_gold_fallback: bool = False,
 ) -> Dict[str, float]:
 
     ranks: List[Optional[int]] = []
 
-    # pool size for reranker (fusion/encoder pooling), separate from final top_k
     rerank_pool = int(pool_k) if pool_k is not None else max(50, int(top_k))
 
     def relation_to_mode(rel: str) -> str:
@@ -116,12 +113,11 @@ def evaluate(
         if gold is not None:
             gold_entities = [gold["head"], gold["tail"]]
 
-
         results = pipeline.process(
             question=question,
-            encoder_top_k=top_k,                 # final list size = 10
-            rerank_cap=rerank_cap,               # candidate cap after time filter
-            rerank_pool_k=rerank_pool,           # fusion/encoder pool size
+            encoder_top_k=top_k,
+            rerank_cap=rerank_cap,
+            rerank_pool_k=rerank_pool,
             use_rewriter=False,
             use_implicit=True,
             use_time_filter=use_time_filter,
@@ -131,9 +127,7 @@ def evaluate(
             single_event_time_mode=single_event_mode,
         )
 
-        # 2) debug (gold fallback: only if extractor returns none)
-        extracted = results.get("extracted_entities") or []
-        if use_gold_fallback and (not extracted) and gold_entities:
+        if use_gold_fallback and (not (results.get("extracted_entities") or [])) and gold_entities:
             results = pipeline.process(
                 question=question,
                 encoder_top_k=top_k,
@@ -149,7 +143,6 @@ def evaluate(
                 override_entities=gold_entities,
             )
 
-        # Diagnostics
         if debug_first_n and i <= debug_first_n:
             filtered_cands = results.get("filtered_candidates") or []
             final_triples = results.get("final_triples") or []
@@ -160,44 +153,12 @@ def evaluate(
 
             print("[dbg ents]", results.get("extracted_entities"))
             print(
-                f"[dbg {i}] rel={rel} mode={single_event_mode} retrieved={retrieved_n} after_time={after_time_n} "
-                f"filtered={len(filtered_cands)} gold_in_filtered={gold_in_filtered} gold_in_final={gold_in_final} "
+                f"[dbg {i}] rel={rel} mode={single_event_mode} "
+                f"retrieved={retrieved_n} after_time={after_time_n} "
+                f"filtered={len(filtered_cands)} "
+                f"gold_in_filtered={gold_in_filtered} gold_in_final={gold_in_final} "
                 f"time_anchor={time_anchor}"
             )
-
-        
-        if print_answers and i <= max_print:
-            print(f"\n[{i}] Q: {question}")
-
-            gold_answer = ex.get("answer")
-            if gold_answer is not None:
-                print(f"    Gold answer (dataset): {gold_answer}")
-
-            if gold is not None:
-                print(f"    Gold quadruple: {gold['head']} | {gold['relation']} | {gold['tail']} | {gold['date']}")
-
-            print(f"    Pred answer (top-1): {results.get('answer')}")
-            ev = results.get("answer_evidence") or {}
-            if ev:
-                print(
-                    f"    Pred evidence: {ev.get('head')} | {ev.get('relation')} | {ev.get('tail')} | {ev.get('date')}")
-
-            # top k-list and gold rank
-            final_triples = results.get("final_triples") or []
-            if gold is not None:
-                gold_rank = get_rank(results, gold, top_k)
-                print(f"    Gold rank@{top_k}: {gold_rank if gold_rank is not None else 'NOT IN TOP-K'}")
-
-            print(f"    Top-{top_k}:")
-            for r, cand in enumerate(final_triples[:top_k], start=1):
-                h = cand.get("head");
-                rel = cand.get("relation");
-                t = cand.get("tail");
-                d = cand.get("date")
-                marker = ""
-                if gold is not None and match(cand, gold):
-                    marker = "  <== GOLD"
-                print(f"      {r:>2}. {h} | {rel} | {t} | {d}{marker}")
 
         if gold is None:
             ranks.append(None)
@@ -217,6 +178,7 @@ def run_ablation(
     pool_k: Optional[int] = None,
     rerank_cap: int = 200,
     use_gold_fallback: bool = False,
+    debug_first_n: int = 0,
 ) -> None:
 
     configs = [
@@ -225,8 +187,8 @@ def run_ablation(
         ("TimeFilter=ON, Rerank=OFF", True, False),
     ]
 
-    print(f"\nAblation (n={len(data)}, k={top_k})")
-    print(f"{'Config':<28} {'Hit@k':>8} {'MRR':>8} {'Hits':>6}")
+    print(f"\nresults (n={len(data)}, k={top_k})")
+    print(f"{'setting':<28} {'hit@k':>8} {'mrr':>8} {'hits':>6}")
 
     for name, time_on, rerank_on in configs:
         m = evaluate(
@@ -238,18 +200,19 @@ def run_ablation(
             rerank_cap=rerank_cap,
             use_time_filter=time_on,
             use_reranker=rerank_on,
-            print_answers=False,
-            use_gold_fallback=use_gold_fallback,  # <-- THIS is the only needed addition
+            debug_first_n=debug_first_n,
+            use_gold_fallback=use_gold_fallback,
         )
         print(f"{name:<28} {m['hit@k']:>8.3f} {m['mrr']:>8.3f} {m['hits']:>6}")
 
+
+
 def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument("--dataset", default="official_QA_dev_split.json")
+    parser.add_argument("--dataset", default="data/official_QA_dev_split.json")
     parser.add_argument("--question_mode", default="implicit", choices=["implicit", "explicit"])
-
-    parser.add_argument("--implicit_graph", default="implicit_relation_graph.json")
-    parser.add_argument("--icews", default="icews_2014_train.txt")
+    parser.add_argument("--implicit_graph", default="experimental/implicit_relation_graph.json")
+    parser.add_argument("--icews", default="data/icews_2014_train.txt")
 
     parser.add_argument("--encoder", default="BAAI/bge-large-en-v1.5")
     parser.add_argument("--device", default="cuda" if torch.cuda.is_available() else "cpu")
@@ -257,12 +220,14 @@ def main():
     parser.add_argument("--time_tolerance", type=int, default=30)
     parser.add_argument("--top_k", type=int, default=10)
     parser.add_argument("--rerank_cap", type=int, default=200)
-    parser.add_argument("--print_answers", action="store_true")
-    parser.add_argument("--max_print", type=int, default=20)
-    parser.add_argument("--pool_k", type=int, default=None,
-                        help="Reranker pool size (encoder_top_k).  Example: --pool_k 200. If unset, uses --top_k.")
+    parser.add_argument(
+        "--pool_k",
+        type=int,
+        default=None,
+        help="Reranker pool size. If unset, uses max(50, top_k).",
+    )
+    parser.add_argument("--debug_first_n", type=int, default=0)
 
-    # TKGE
     parser.add_argument(
         "--tkge_dir",
         default=None,
@@ -306,26 +271,10 @@ def main():
             device=args.device,
             retriever_cap=args.retriever_cap,
             tkge_dir=tkge_dir,
-
         )
 
     def run_all(pipeline: TKGQAPipeline, title: str):
         print(title)
-
-        if args.print_answers:
-            print("\nSample Outputs")
-            evaluate(
-                pipeline,
-                data,
-                args.question_mode,
-                top_k=args.top_k,
-                pool_k=args.pool_k,
-                rerank_cap=args.rerank_cap,
-                print_answers=True,
-                max_print=args.max_print,
-                use_gold_fallback=args.use_gold_fallback,
-            )
-
         run_ablation(
             pipeline,
             data,
@@ -334,6 +283,7 @@ def main():
             pool_k=args.pool_k,
             rerank_cap=args.rerank_cap,
             use_gold_fallback=args.use_gold_fallback,
+            debug_first_n=args.debug_first_n,
         )
 
     if args.run_both:
