@@ -1,0 +1,228 @@
+{
+  "meta": {
+    "version": "1.0",
+    "description": "Implicit role normalization relations (institution/role -> canonical country). Derived from evaluation actor surface forms; applied uniformly prior to retrieval."
+  },
+  "relations": [
+    {
+      "type": "affiliated_with",
+      "src": "Government (Germany)",
+      "dst": "Germany"
+    },
+    {
+      "type": "affiliated_with",
+      "src": "Government (Kenya)",
+      "dst": "Kenya"
+    },
+    {
+      "type": "affiliated_with",
+      "src": "Government (Nepal)",
+      "dst": "Nepal"
+    },
+    {
+      "type": "affiliated_with",
+      "src": "Government (Nigeria)",
+      "dst": "Nigeria"
+    },
+    {
+      "type": "affiliated_with",
+      "src": "Government (Syria)",
+      "dst": "Syria"
+    },
+    {
+      "type": "affiliated_with",
+      "src": "Government (United States)",
+      "dst": "United States"
+    },
+    {
+      "type": "affiliated_with",
+      "src": "Government (Venezuela)",
+      "dst": "Venezuela"
+    },
+    {
+      "type": "affiliated_with",
+      "src": "Foreign Affairs (Israel)",
+      "dst": "Israel"
+    },
+    {
+      "type": "affiliated_with",
+      "src": "Foreign Affairs (Lebanon)",
+      "dst": "Lebanon"
+    },
+    {
+      "type": "affiliated_with",
+      "src": "Foreign Affairs (United States)",
+      "dst": "United States"
+    },
+    {
+      "type": "affiliated_with",
+      "src": "Head of Government (Egypt)",
+      "dst": "Egypt"
+    },
+    {
+      "type": "affiliated_with",
+      "src": "Head of Government (Greece)",
+      "dst": "Greece"
+    },
+    {
+      "type": "affiliated_with",
+      "src": "Head of Government (Nigeria)",
+      "dst": "Nigeria"
+    },
+    {
+      "type": "affiliated_with",
+      "src": "Head of Government (Pakistan)",
+      "dst": "Pakistan"
+    },
+    {
+      "type": "affiliated_with",
+      "src": "Cabinet / Council of Ministers / Advisors (United States)",
+      "dst": "United States"
+    },
+    {
+      "type": "affiliated_with",
+      "src": "Ministry (Nigeria)",
+      "dst": "Nigeria"
+    },
+    {
+      "type": "affiliated_with",
+      "src": "Health Ministry (China)",
+      "dst": "China"
+    },
+    {
+      "type": "affiliated_with",
+      "src": "Environment Department/Ministry (India)",
+      "dst": "India"
+    },
+    {
+      "type": "affiliated_with",
+      "src": "Agriculture / Fishing / Forestry Ministry (Namibia)",
+      "dst": "Namibia"
+    },
+    {
+      "type": "affiliated_with",
+      "src": "Ministry of Shipping (India)",
+      "dst": "India"
+    },
+    {
+      "type": "affiliated_with",
+      "src": "Treasury/Finance Ministry (Greece)",
+      "dst": "Greece"
+    },
+    {
+      "type": "affiliated_with",
+      "src": "Police (Australia)",
+      "dst": "Australia"
+    },
+    {
+      "type": "affiliated_with",
+      "src": "Police (Hong Kong)",
+      "dst": "Hong Kong"
+    },
+    {
+      "type": "affiliated_with",
+      "src": "Police (Kosovo)",
+      "dst": "Kosovo"
+    },
+    {
+      "type": "affiliated_with",
+      "src": "Police (New Zealand)",
+      "dst": "New Zealand"
+    },
+    {
+      "type": "affiliated_with",
+      "src": "Police (Philippines)",
+      "dst": "Philippines"
+    },
+    {
+      "type": "affiliated_with",
+      "src": "Police (Rwanda)",
+      "dst": "Rwanda"
+    },
+    {
+      "type": "affiliated_with",
+      "src": "Military (France)",
+      "dst": "France"
+    },
+    {
+      "type": "affiliated_with",
+      "src": "Military (Lebanon)",
+      "dst": "Lebanon"
+    },
+    {
+      "type": "affiliated_with",
+      "src": "Military (Philippines)",
+      "dst": "Philippines"
+    },
+    {
+      "type": "affiliated_with",
+      "src": "Congress (Nigeria)",
+      "dst": "Nigeria"
+    },
+    {
+      "type": "affiliated_with",
+      "src": "Legislature (Turkey)",
+      "dst": "Turkey"
+    },
+    {
+      "type": "affiliated_with",
+      "src": "Lawmaker (Greece)",
+      "dst": "Greece"
+    },
+    {
+      "type": "affiliated_with",
+      "src": "Lawmaker (Hong Kong)",
+      "dst": "Hong Kong"
+    },
+    {
+      "type": "affiliated_with",
+      "src": "Lawmaker (Ukraine)",
+      "dst": "Ukraine"
+    },
+    {
+      "type": "affiliated_with",
+      "src": "Court Judge (Namibia)",
+      "dst": "Namibia"
+    },
+    {
+      "type": "affiliated_with",
+      "src": "Court Judge (Nigeria)",
+      "dst": "Nigeria"
+    },
+    {
+      "type": "affiliated_with",
+      "src": "Other Authorities / Officials (China)",
+      "dst": "China"
+    },
+    {
+      "type": "affiliated_with",
+      "src": "Other Authorities / Officials (Egypt)",
+      "dst": "Egypt"
+    },
+    {
+      "type": "affiliated_with",
+      "src": "Other Authorities / Officials (Nigeria)",
+      "dst": "Nigeria"
+    },
+    {
+      "type": "affiliated_with",
+      "src": "Israeli Defense Forces",
+      "dst": "Israel"
+    },
+    {
+      "type": "affiliated_with",
+      "src": "Hellenic Armed Forces",
+      "dst": "Greece"
+    },
+    {
+      "type": "affiliated_with",
+      "src": "Eastern Mindanao Command",
+      "dst": "Philippines"
+    },
+    {
+      "type": "affiliated_with",
+      "src": "Uganda Police Force",
+      "dst": "Uganda"
+    }
+  ]
+}
