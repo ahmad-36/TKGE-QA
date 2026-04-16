@@ -80,7 +80,7 @@ A detailed report including methodology, experiments, and reflections is availab
 
 ---
 
-## ⚙️ Original Project (Shortened)
+## ⚙️ Original Project 
 
 This project explores **event-based temporal question answering** over the ICEWS14 dataset using a modular pipeline:
 
