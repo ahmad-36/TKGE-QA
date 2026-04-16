@@ -1,30 +1,105 @@
-# Temporal KG Embeddings for Event-Based Question Answering on ICEWS14
+# Temporal KG Embeddings for Event-Based Question Answering (Fork)
 
-Research Case Study repository (WiSe 2025/26, Trier University) for event-based temporal question answering over ICEWS14.
+This repository is a fork of a research case study project developed at Trier University (WiSe 2025/26), focusing on temporal question answering over the ICEWS14 dataset.
 
-The project studies whether TTransE-based structural plausibility adds useful signal beyond text-based semantic matching in a modular QA pipeline.
+🔗 Original repository: https://github.com/siwer/Research-Case-Studies-WS-25-26-
 
-**Pipeline:** Question → Extraction → Retrieval → TimeFilter (ON/OFF) → Neural reranking → Top-k event candidates
+---
 
-**Settings:** time-conditioned vs. unconditioned, explicit vs. implicit questions, encoder-only vs. fusion reranking
+## 📌 My Contributions
 
-The repository contains the final pipeline code, evaluation scripts, QA resources, fusion checkpoint, and TKGE artifacts. Exploratory components not used in the final reported experiments are kept under `experimental/`.
+My work focused on **semantic reranking using sentence encoders** within the QA pipeline and evaluating their effectiveness compared to temporal signals.
 
-## Repository structure
+### 🔹 Encoder Exploration and Integration
 
-- `pipeline.py` — main pipeline
-- `preprocess/` — entity extraction
-- `retrieval/` — retriever, temporal filter, rerankers, TKGE scorer
-- `eval/` — evaluation scripts
-- `data/` — QA splits and ICEWS14 retrieval data
-- `checkpoints/` — fusion checkpoint
-- `tkge_artifacts/` — TTransE checkpoint and ID maps
-- `scripts/` — utility scripts
-- `experimental/` — exploratory modules not used in the final reported experiments
+* Implemented semantic reranking using sentence-transformer models
+* Evaluated multiple encoders:
 
-## Setup
+  * `all-MiniLM-L6-v2`
+  * `BAAI/bge-large-en-v1.5` (final choice)
+* Designed verbalization strategy for structured quadruples:
 
-In Colab, the code was run with:
+  ```
+  {subject} {predicate} {object} on {timestamp}
+  ```
+
+### 🔹 Evaluation Pipeline
+
+* Built:
+
+  * `run_reranker_eval.py` → evaluation (Hit@10, MRR)
+  * `build_reranker_eval_bundle_vA.py` → candidate pool construction
+* Compared semantic reranking vs temporal filtering
+
+### 🔹 Retrieval + Infrastructure
+
+* Implemented:
+
+  * `baseline_retriever.py` (entity-based retrieval with substring fallback)
+  * `id_mapping.py` (consistent entity/relation mapping)
+
+### 🔹 Fine-Tuning Experiments
+
+* Implemented reranker fine-tuning using:
+
+  * Triplet loss with hard negatives
+  * Frozen encoder + projection head
+* Result:
+
+  * MRR improved (~0.73 → ~0.76)
+  * Hit@10 unchanged
+
+---
+
+## 📊 Key Findings
+
+* Temporal filtering had the **largest impact** (+0.257 Hit@10)
+* Semantic reranking alone provided **no overall improvement**
+* TKGE fusion gave **minor gains only for implicit questions**
+* Conclusion:
+
+  > Temporal information is more critical than semantic similarity for ICEWS-style event QA
+
+---
+
+## 📁 My Relevant Files
+
+* `encoder_reranker.py`
+* `baseline_retriever.py`
+* `id_mapping.py`
+* `run_reranker_eval.py`
+* `build_reranker_eval_bundle_vA.py`
+
+---
+
+## 📖 Full Report
+
+A detailed report including methodology, experiments, and reflections is available here:
+
+👉 `docs/TKGQA_Report.pdf`
+
+---
+
+## ⚙️ Original Project (Shortened)
+
+This project explores **event-based temporal question answering** over the ICEWS14 dataset using a modular pipeline:
+
+**Pipeline:**
+Question → Extraction → Retrieval → Time Filtering → Neural Reranking → Top-k Results
+
+**Goal:**
+Evaluate whether **temporal knowledge graph embeddings (TTransE)** provide additional signal beyond semantic matching.
+
+**Includes:**
+
+* Full QA pipeline implementation
+* Evaluation scripts
+* Temporal KG embedding artifacts
+* Fusion-based reranking model
+
+---
+
+## 🛠️ Setup (Original)
 
 ```bash
 pip install -q torch sentence-transformers transformers huggingface-hub requests spacy
@@ -36,5 +111,4 @@ python eval/run_eval.py --run_both \
   --question_mode explicit \
   --top_k 10 --pool_k 200 --rerank_cap 200 \
   --time_tolerance 30
-
-Configurable via command-line arguments for split, question type, filtering, and reranking.
+```
